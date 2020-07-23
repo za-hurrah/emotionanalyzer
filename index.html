@@ -15,25 +15,22 @@
     </div>
 
     <div class="textbox">
-      <textarea  placeholder="Type anything here!!!" rows="8" cols="80">
-
+      <textarea  type="text" id="text" placeholder="Type anything here!!!" rows="8" cols="80" value="i love you">
       </textarea>
     </div>
 
+
     <div class="boxbuttons">
       <button type= "button" id="clear">Clear</button>
-      <button onClick='document.getElementById("resulttext").style.visibility = "visible"'
-               type= "button" id="submit">Submit</button>
+      <button type="button" id="emoji"></button>
+      <button type= "button" id="submit">Submit</button>
     </div>
 
-    <div class="results">
-      <textarea id = "resulttext" rows="8" cols="80"></textarea>
+    <div class="emojipicture">
 
     </div>
-
-
+  <script src="AFINN.js"></script>
   <script src="scripts/vibes.js"></script>
-  <script src=AFINN.json></script>
   </body>
 
 </html>
