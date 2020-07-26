@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel='stylesheet' href='styles.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Sentiment Analyzer</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Sentiment Analyzer</h1>
+    </div>
+    <div class="instructions">
+      <p>We inaccurately gauge the effect of our words all the time. Often times spoken words don't always translate well into text.
+        This web app <em>objectively</em> calculates the sentiment of your text (Obvisouly computers are smarter than humans).
+        Please type any text you would like and recieve your sentiment score.</p>
+    </div>
+
+    <div class="textbox">
+      <textarea  type="text" id="text" placeholder="Type anything here!!!" rows="8" cols="80" value="">
+      </textarea>
+    </div>
+
+
+    <div class="boxbuttons">
+      <div class="clearbutton"><button type= "button" id="clear">Clear</button></div>
+      <div class="submitbutton"><button type= "button" id="submit">Submit</button></div>
+    </div>
+
+  <script src="AFINN.js"></script>
+  <script src="scripts/vibes.js"></script>
+  </body>
+
+</html>
